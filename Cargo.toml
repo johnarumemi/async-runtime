@@ -1,0 +1,17 @@
+[package]
+name = "async-runtime"
+version = "0.1.0"
+edition = "2021"
+description = "A simple async runtime, developed for the purposes of learning and experimenting."
+readme = "README.md"
+keywords = ["async", "runtime"]
+
+
+[dependencies]
+mio = { version = "0.8", features = ["net", "os-poll"] }
+
+[features]
+# There are some features that are not used in the code, but are kept for
+# future reference and general learning. These are hidden behing the below flag
+# and should not generally do much even if used.
+obsolete = []
